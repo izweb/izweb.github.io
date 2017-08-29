@@ -4,3 +4,4 @@ _site
 _deploy.yml
 .idea
 Gemfile.lock
+.deploy
