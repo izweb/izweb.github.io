@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-31T07:50:21+07:00</updated><id>http://localhost:4000/</id><title type="html">izweb | Blog report by HuongNX</title><subtitle>My report for every month
+</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/08/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-28T16:21:41+07:00</published><updated>2017-08-28T16:21:41+07:00</updated><id>http://localhost:4000/jekyll/update/2017/08/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/08/28/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Hello World</title><link href="http://localhost:4000/2017/08/28/hello-world.html" rel="alternate" type="text/html" title="Hello World" /><published>2017-08-28T00:00:00+07:00</published><updated>2017-08-28T00:00:00+07:00</updated><id>http://localhost:4000/2017/08/28/hello-world</id><content type="html" xml:base="http://localhost:4000/2017/08/28/hello-world.html">&lt;blockquote&gt;
+  &lt;p&gt;Octopress is an obsessively designed toolkit for writing and deploying Jekyll blogs. Pretty sweet, huh?
+– &lt;a href=&quot;https://github.com/octopress/octopress&quot;&gt;Octopress&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Octopress&lt;/strong&gt; là một &lt;strong&gt;&lt;em&gt;framework&lt;/em&gt;&lt;/strong&gt; design cho Jekyll. Gọi là &lt;strong&gt;&lt;em&gt;framework&lt;/em&gt;&lt;/strong&gt; nghe có hơi to tát - một cách ngắn gọn, &lt;strong&gt;Octopress&lt;/strong&gt; là một bộ &lt;code class=&quot;highlighter-rouge&quot;&gt;template/tools/plugin&lt;/code&gt; giúp cho việc generate static site đơn giản hơn.&lt;/p&gt;
+
+&lt;p&gt;Trong khuôn khổ bài viết này, mình xin hướng dẫn các bạn sử dụng &lt;strong&gt;Octopress&lt;/strong&gt; để tạo 1 blog đơn giản, thêm bài viêt, page.&lt;/p&gt;
+
+&lt;p&gt;Xong màn dạo đầu… Tiến hành luôn cho nó nóng.&lt;/p&gt;
+
+&lt;h1 id=&quot;cài-đặt-và-sử-dụng&quot;&gt;Cài đặt và sử dụng&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Yêu cầu:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Hệ điều hành Linux hoặc Mac OS. 
+Máy cần cài sẵn Ruby, RubyGems, NodeJS (để hộ trợ CoffeeScript, còn không dùng CoffeeScript thì không có cũng được).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Đầu tiên, chúng ta cần cài đặt octopress gem từ Teminal:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install octopress
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;tạo-mới-project&quot;&gt;Tạo mới project&lt;/h3&gt;
+&lt;p&gt;Tạo một project mới với Octopress CLI commands::&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;octopress new izweb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Kết quả thu được sau khi chạy lên trên như thế này là bạn đã thành công:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd izweb
+$ tree
+.
+├── 404.html
+├── about.md
+├── _config.yml
+├── Gemfile
+├── Gemfile.lock
+├── index.md
+├── _posts
+│   └── 2017-08-28-welcome-to-jekyll.markdown
+└── _templates
+    ├── draft
+    ├── page
+    └── post
+
+2 directories, 10 files
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;thêm-bài-viết&quot;&gt;Thêm bài viết&lt;/h3&gt;
+&lt;p&gt;Để tạo bài viết mới, các bạn dùng Octopress CLI commands:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;octopress new post Hello World
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Comand trên sẽ tạo mới 1 bài viết với tiêu đề&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt;và thêm vào thư mục&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt;file&lt;code class=&quot;highlighter-rouge&quot;&gt;2017-08-28-hello-world.markdown&lt;/code&gt;với nội dung như sau:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat _posts/2017-08-28-hello-world.markdown 
+---
+layout: post
+title: &quot;Hello World&quot;
+date: 2017-08-28T16:28:42+07:00
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Mặc định nội dung của bài post được viết dưới dạng &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt;  file. Nội dung bài post sẽ nằm phía dưới &lt;code class=&quot;highlighter-rouge&quot;&gt;YAML front matter&lt;/code&gt;  (phần nội dung nằm giữa cú pháp &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt;, tại đây bạn cũng có thể đặt được các biến xác định trước và biến tùy chỉnh, chẳng hạn như Categories, Tags và permalink. Chi tiết các bạn tham khảo thêm tại &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;Jekyll Documentation&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;view-bài-viết&quot;&gt;View bài viết&lt;/h3&gt;
+&lt;p&gt;Để view được bài viết vừa thêm, trước tiên cần chạy lệnh:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Jekyll sẽ tự động kiểm tra mọi thay đổi trên các file trong project của bạn và build vào trong thư mục&lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bây giờ chúng ta chạy lệnh:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Access vào địa chỉ &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt; bạn sẽ thấy trang web của mình :D&lt;/p&gt;
+
+&lt;h3 id=&quot;tạo-page&quot;&gt;Tạo page&lt;/h3&gt;
+&lt;p&gt;Khi chạy lệnh &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;Octopress mặc định tạo ra &lt;strong&gt;About&lt;/strong&gt; page tại địa chỉ &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.0:4000/about/&lt;/code&gt;. Các bạn có thể tìm thấy nó trong thư mục &lt;code class=&quot;highlighter-rouge&quot;&gt;_site/about&lt;/code&gt;
+Để tạo page cũng tương tự như tạo post, các bạn sử dụng Octopress CLI commands:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ octopress new page contact.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Thao tác này sẽ tạo một trang mới trong thư mục chính của project. Nội dung file được tạo ra như sau:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: page
+title: &quot;&quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Nhập title của page nếu bạn muốn.
+Bạn có thể nhập nội dung cho trang bên dưới phần đầu của YAML. Giống như trong trường hợp của bài viết, nội dung được viết bằng định dạng markdown. Bạn cũng có thể chọn một đường dẫn để tạo trang. Ví dụ:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ octopress new page news/index.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Thao tác này sẽ tạo ra một thư mục mới có tên news và một tệp index.md bên trong nó.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Khi bạn chạy&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;và&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, tệp .html được tạo ra giống như nội dụng có trong trang “about”. F5 web, link tới trang sẽ tự động hiển thị trong navigation bar.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;kết-luận&quot;&gt;Kết luận&lt;/h1&gt;
+&lt;p&gt;Trong bài viết này mình đã giới thiệu cơ bản các thao tác đề tạo được 1 blog, thêm bài viết mới, thêm page với &lt;code class=&quot;highlighter-rouge&quot;&gt;Octopress 3&lt;/code&gt;. Bài viết tiếp theo mình sẽ hướng dẫn các bạn thêm tính năng chia sẻ lên mạng xã hội (Twitter) và deploy lên môi trường production - ở đây chúng ta sẽ dùng &lt;code class=&quot;highlighter-rouge&quot;&gt;Github Pages&lt;/code&gt; (đối với các bạn chưa biết về &lt;code class=&quot;highlighter-rouge&quot;&gt;Gihub Pages&lt;/code&gt;.
+Hẹn gặp lại ở kỳ sau! Chào thân ái và quyết thắng!&lt;/p&gt;
+
+&lt;p&gt;Nguồn: https://github.com/octopress/octopress&lt;/p&gt;</content><author><name></name></author><summary type="html">Octopress is an obsessively designed toolkit for writing and deploying Jekyll blogs. Pretty sweet, huh? – Octopress</summary></entry></feed>

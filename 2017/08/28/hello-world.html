@@ -1,0 +1,106 @@
+<blockquote>
+  <p>Octopress is an obsessively designed toolkit for writing and deploying Jekyll blogs. Pretty sweet, huh?
+– <a href="https://github.com/octopress/octopress">Octopress</a></p>
+</blockquote>
+
+<p><strong>Octopress</strong> là một <strong><em>framework</em></strong> design cho Jekyll. Gọi là <strong><em>framework</em></strong> nghe có hơi to tát - một cách ngắn gọn, <strong>Octopress</strong> là một bộ <code class="highlighter-rouge">template/tools/plugin</code> giúp cho việc generate static site đơn giản hơn.</p>
+
+<p>Trong khuôn khổ bài viết này, mình xin hướng dẫn các bạn sử dụng <strong>Octopress</strong> để tạo 1 blog đơn giản, thêm bài viêt, page.</p>
+
+<p>Xong màn dạo đầu… Tiến hành luôn cho nó nóng.</p>
+
+<h1 id="cài-đặt-và-sử-dụng">Cài đặt và sử dụng</h1>
+<p><strong>Yêu cầu:</strong></p>
+<blockquote>
+  <p>Hệ điều hành Linux hoặc Mac OS. 
+Máy cần cài sẵn Ruby, RubyGems, NodeJS (để hộ trợ CoffeeScript, còn không dùng CoffeeScript thì không có cũng được).</p>
+</blockquote>
+
+<p>Đầu tiên, chúng ta cần cài đặt octopress gem từ Teminal:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install octopress
+</code></pre>
+</div>
+
+<h3 id="tạo-mới-project">Tạo mới project</h3>
+<p>Tạo một project mới với Octopress CLI commands::</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>octopress new izweb
+</code></pre>
+</div>
+<p>Kết quả thu được sau khi chạy lên trên như thế này là bạn đã thành công:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cd izweb
+$ tree
+.
+├── 404.html
+├── about.md
+├── _config.yml
+├── Gemfile
+├── Gemfile.lock
+├── index.md
+├── _posts
+│   └── 2017-08-28-welcome-to-jekyll.markdown
+└── _templates
+    ├── draft
+    ├── page
+    └── post
+
+2 directories, 10 files
+</code></pre>
+</div>
+<h3 id="thêm-bài-viết">Thêm bài viết</h3>
+<p>Để tạo bài viết mới, các bạn dùng Octopress CLI commands:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>octopress new post Hello World
+</code></pre>
+</div>
+<p>Comand trên sẽ tạo mới 1 bài viết với tiêu đề<code class="highlighter-rouge">Hello World</code>và thêm vào thư mục<code class="highlighter-rouge">_posts</code>file<code class="highlighter-rouge">2017-08-28-hello-world.markdown</code>với nội dung như sau:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cat _posts/2017-08-28-hello-world.markdown 
+---
+layout: post
+title: "Hello World"
+date: 2017-08-28T16:28:42+07:00
+---
+</code></pre>
+</div>
+<p>Mặc định nội dung của bài post được viết dưới dạng <a href="https://daringfireball.net/projects/markdown/">markdown</a>  file. Nội dung bài post sẽ nằm phía dưới <code class="highlighter-rouge">YAML front matter</code>  (phần nội dung nằm giữa cú pháp <code class="highlighter-rouge">---</code>, tại đây bạn cũng có thể đặt được các biến xác định trước và biến tùy chỉnh, chẳng hạn như Categories, Tags và permalink. Chi tiết các bạn tham khảo thêm tại <a href="http://jekyllrb.com/docs/frontmatter/">Jekyll Documentation</a>).</p>
+
+<h3 id="view-bài-viết">View bài viết</h3>
+<p>Để view được bài viết vừa thêm, trước tiên cần chạy lệnh:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ jekyll build
+</code></pre>
+</div>
+<p>Jekyll sẽ tự động kiểm tra mọi thay đổi trên các file trong project của bạn và build vào trong thư mục<code class="highlighter-rouge">_site</code></p>
+
+<p>Bây giờ chúng ta chạy lệnh:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ jekyll serve
+</code></pre>
+</div>
+<p>Access vào địa chỉ <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> bạn sẽ thấy trang web của mình :D</p>
+
+<h3 id="tạo-page">Tạo page</h3>
+<p>Khi chạy lệnh <code class="highlighter-rouge">jekyll build</code>Octopress mặc định tạo ra <strong>About</strong> page tại địa chỉ <code class="highlighter-rouge">http://127.0.0.0:4000/about/</code>. Các bạn có thể tìm thấy nó trong thư mục <code class="highlighter-rouge">_site/about</code>
+Để tạo page cũng tương tự như tạo post, các bạn sử dụng Octopress CLI commands:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ octopress new page contact.md
+</code></pre>
+</div>
+<p>Thao tác này sẽ tạo một trang mới trong thư mục chính của project. Nội dung file được tạo ra như sau:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: page
+title: ""
+---
+</code></pre>
+</div>
+<p>Nhập title của page nếu bạn muốn.
+Bạn có thể nhập nội dung cho trang bên dưới phần đầu của YAML. Giống như trong trường hợp của bài viết, nội dung được viết bằng định dạng markdown. Bạn cũng có thể chọn một đường dẫn để tạo trang. Ví dụ:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ octopress new page news/index.md
+</code></pre>
+</div>
+<p>Thao tác này sẽ tạo ra một thư mục mới có tên news và một tệp index.md bên trong nó.</p>
+
+<blockquote>
+  <p>Khi bạn chạy<code class="highlighter-rouge">jekyll build</code>và<code class="highlighter-rouge">jekyll serve</code>, tệp .html được tạo ra giống như nội dụng có trong trang “about”. F5 web, link tới trang sẽ tự động hiển thị trong navigation bar.</p>
+</blockquote>
+
+<h1 id="kết-luận">Kết luận</h1>
+<p>Trong bài viết này mình đã giới thiệu cơ bản các thao tác đề tạo được 1 blog, thêm bài viết mới, thêm page với <code class="highlighter-rouge">Octopress 3</code>. Bài viết tiếp theo mình sẽ hướng dẫn các bạn thêm tính năng chia sẻ lên mạng xã hội (Twitter) và deploy lên môi trường production - ở đây chúng ta sẽ dùng <code class="highlighter-rouge">Github Pages</code> (đối với các bạn chưa biết về <code class="highlighter-rouge">Gihub Pages</code>.
+Hẹn gặp lại ở kỳ sau! Chào thân ái và quyết thắng!</p>
+
+<p>Nguồn: https://github.com/octopress/octopress</p>
